@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # apt-get update
-echo "deb https://mirrors.aliyun.com/ubuntu/ focal main multiverse restricted universe" > /etc/apt/sources.list.d/aliyun.list
+# echo "deb https://mirrors.aliyun.com/ubuntu/ focal main multiverse restricted universe" > /etc/apt/sources.list.d/aliyun.list
 
 apt-get install net-tools
 apt-get install iptables
