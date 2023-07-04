@@ -18,7 +18,10 @@ dpkg -i ss-ui.deb
 
 ################################################
 
-apt-get -y install nginx
-apt-get -y install python3-pip
-pip3 install Flask
+# apt-get -y install nginx
+apt-get -y install python3
+apt-get -y install python3-flask
+
+# apt-get -y install python3-pip
+# pip3 install Flask
 
