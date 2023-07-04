@@ -3,6 +3,7 @@
 # apt-get update
 # echo "deb https://mirrors.aliyun.com/ubuntu/ focal main multiverse restricted universe" > /etc/apt/sources.list.d/aliyun.list
 
+
 apt-get -y  install net-tools
 apt-get -y  install iptables
 apt-get -y  install mosquitto
@@ -12,7 +13,10 @@ apt-get -y  install rsyslog
 
 echo -e "\nkern.warning /var/log/iptables.log" >> /etc/rsyslog.d/50-default.conf
 
+wget -N https://raw.githubusercontent.com/MenglongWu/cloud-pub/master/deb/shadowsocks-v2ray-plugin_1.3.1-3+b6_amd64.deb
 wget -N https://raw.githubusercontent.com/MenglongWu/cloud-pub/master/deb/ss-ui.deb 
+
+dpkg -i shadowsocks-v2ray-plugin_1.3.1-3+b6_amd64.deb
 dpkg -i ss-ui.deb
 
 
