@@ -14,3 +14,11 @@ echo -e "\nkern.warning /var/log/iptables.log" >> /etc/rsyslog.d/50-default.conf
 
 wget -N https://raw.githubusercontent.com/MenglongWu/cloud-pub/master/deb/ss-ui.deb 
 dpkg -i ss-ui.deb
+
+
+################################################
+
+apt-get install nginx
+apt-get install python3-pip
+pip3 install Flask
+
