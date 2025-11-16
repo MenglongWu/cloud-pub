@@ -4,7 +4,7 @@
 # echo "deb https://mirrors.aliyun.com/ubuntu/ focal main multiverse restricted universe" > /etc/apt/sources.list.d/aliyun.list
 
 
-# apt-get -y install nginx
+apt-get -y install nginx
 apt-get -y install python3
 apt-get -y install python3-flask
 
@@ -22,9 +22,15 @@ echo -e "\nkern.warning /var/log/iptables.log" >> /etc/rsyslog.d/50-default.conf
 
 wget -N https://raw.githubusercontent.com/MenglongWu/cloud-pub/master/deb/shadowsocks-v2ray-plugin_1.3.1-3+b6_amd64.deb
 wget -N https://raw.githubusercontent.com/MenglongWu/cloud-pub/master/deb/ss-ui.deb 
+wget -N https://raw.githubusercontent.com/MenglongWu/cloud-pub/master/deb/tcp2ws-utils.deb 
+
+
+# ss-server -p 80 -k wml123456 -m aes-256-gcm --reuse-port 1 --plugin ss-v2ray-plugin --plugin-opts "server;path=/nhml" & 
+# ss-server -p 80 -k wml123456 -m aes-256-gcm --reuse-port 1 --plugin ss-v2ray-plugin --plugin-opts "server;path=/ncah" &
 
 dpkg -i shadowsocks-v2ray-plugin_1.3.1-3+b6_amd64.deb
 dpkg -i ss-ui.deb
+dpkg -i tcp2ws-utils.deb
 
 
 ################################################
